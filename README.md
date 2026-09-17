@@ -2,6 +2,7 @@
 
   ### >*Repositório do Trabalho Interdisciplinar da Disciplina de Projetos em Banco de Dados* (Trabalho Interdisciplinar II), do curso de Ciência de Dados e Inteligência Artificial. O projeto tem caráter de extensão universitária: *aplica os conceitos de modelagem e projeto de banco de dados relacional a uma demanda real de uma <u> parceira externa</u>*.
 
+---
 
 ###  **Sobre o Projeto:**
 
@@ -14,10 +15,13 @@
     - Projeto Físico(Script SQL);
     - Desenvolvimento de uma Aplicação web integrada à base.
 
+---
+
 ### **Sobre o Parceiro:**
 
 #### O modelo de negócio escolhido para ser acompanhado durante o desenvolvimento da solução, é uma empresa de impressãon 3D sob CNPJ <***INSERIR?***>, atualmente em estágio inicial de operação e pertencente a participante <***NOME_ALUNA?***> que além de se assumir o papel de integrante deste projeto, se comportará como a persona do parceiro de negócio em si. A empresa **NÓS 3D** atende pedidos diversos de clientes (peças e objetivos variados) se um nicho de produto definido nem estratégia de divulgação estruturada, sendo portanto, o este relato, uma das dores do especificadas pelo parceiro. Apesar do volume já atendido, não há hoje um sisteam centralizado de registro: dados de clientes e pedidos estão espalhados entre WhatsApp, e-mails e planilhas com fórmulas de cálculo de orçamento. Este projeto busca justamente, **sanar essa lacuna**, entregando uma base de dados única e confiável como primeiro passo para a organização do negócio.
 
+---
 
 ### **Situação-Problema:**
 
@@ -29,6 +33,7 @@
 
 #### - Nenhum controle histórico de materiais, custos e status dos pedidos;
 
+---
 
 ### **Objetivos**
 
@@ -42,11 +47,14 @@
 #### * Desenvolver uma aplicação web de entrada de dados integrada à base.
 #### * Validar a solução com um plano de testes.
 
+---
 
 ### **Metodologia:**
 
 
 #### O projeto segue as etapas definidas pela disciplina: Diagnóstico da situação-problema, definição de personas, projeto conceitual, projeto lógico, projeto físico (script manual + script gerado por ferramenta CASE) e desenvolvimento do front-end, com monitoramento e avaliação contínuos ao longo do semestre.
+
+---
 
 ### **Estrutura do repositório** *em construção!*
 
@@ -55,12 +63,14 @@
 ├── app/           # Aplicação web (front-end + integração com o banco)
 └── README.md
 
+---
 
 ### **Tecnologias (*a definir/atualizar conforme o projeto avança*)**:
 #### - Banco de Dados: *a definir:postgresql*
 #### - Front End: *a definir*
 #### - Ferramenta CASE: *A definir*
 
+---
 
 ### **Equipe:**
 
@@ -70,6 +80,8 @@ Gabriela |*Integrante*| *a definir*
 Isabela | ***Integrante&Parceiro***| *Parceiro de Negócio*
 Lucas Elias Gonçalves Peixoto Lelis de Oliveira| *Integrante* | *a definir*
 Maria Eduarda| *Integrante* | *A definir*
+
+---
 
 ### **Status**
 

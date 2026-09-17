@@ -1,4 +1,4 @@
-##  **Projeto_Banco_De_Dados_Trabalho_Interdisciplinar**
+##  💳 **Projeto Banco De Dados Trabalho_Interdisciplinar**
 
   ### >*Repositório do Trabalho Interdisciplinar da Disciplina de Projetos em Banco de Dados* (Trabalho Interdisciplinar II), do curso de Ciência de Dados e Inteligência Artificial. O projeto tem caráter de extensão universitária: *aplica os conceitos de modelagem e projeto de banco de dados relacional a uma demanda real de uma <u> parceira externa</u>*.
 
@@ -74,4 +74,4 @@ Maria Eduarda| *Integrante* | *A definir*
 ### **Status**
 
 
-#### 🚧 *Em desenvolvimento* projeto em andamento, etapa de levantamento de requisitos e modelagem conceitual.
+#### 🚧 *Em desenvolvimento* projeto em andamento, etapa de levantamento de requisitos e modelagem conceitual/;

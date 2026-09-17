@@ -37,7 +37,7 @@
 
 ### **Objetivos**
 
-#### **Geral:*** desenvolver um banco de dadis relacional e uma aplicação web que centralizem o registro de clientes, pedidos e materiais do negócio de impressão 3D: ***Nós 3D***/parceiro.
+#### **Geral:*** Desenvolver um banco de dados relacional e uma aplicação web que centralizem o registro de clientes, pedidos e materiais do negócio de impressão 3D: ***Nós 3D***/parceiro.
 
 #### **Específicos:**
 
@@ -58,11 +58,13 @@
 
 ### **Estrutura do repositório** *em construção!*
 
+```
 ├── docs/          # Levantamento de requisitos, DER, dicionário de dados, documento do projeto
 ├── sql/           # Scripts de criação do banco (projeto físico)
 ├── app/           # Aplicação web (front-end + integração com o banco)
 └── README.md
 
+```
 ---
 
 ### **Tecnologias (*a definir/atualizar conforme o projeto avança*)**:

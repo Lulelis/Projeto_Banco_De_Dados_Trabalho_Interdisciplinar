@@ -25,9 +25,9 @@
 
 ### **Situação-Problema:**
 
-#### - Ausência de um cadastri centralizado de clientes e pedidos;
+#### - Ausência de um cadastro centralizado de clientes e pedidos;
 
-#### - Informações fragmentadas em múltiplas ferramentas não integradas *(WhatsApp, e-mails, planilhas).*
+#### - Informações fragmentadas em múltiplas ferramentas não integradas: *(WhatsApp, e-mails, planilhas).*
 
 #### - Falta de rastreabilidade do fluxo completo: contato --> orçamento --> pedido --> fechamento. 
 
@@ -79,6 +79,7 @@
 |Nome    | Papel   | Atividades Realizar/A realizar|
 |--------|---------|-----------------------|
 Gabriela |*Integrante*| *a definir*
+Giovanna | *Integrante*| *A definir*
 Isabela | ***Integrante&Parceiro***| *Parceiro de Negócio*
 Lucas Elias Gonçalves Peixoto Lelis de Oliveira| *Integrante* | *a definir*
 Maria Eduarda| *Integrante* | *A definir*

@@ -76,13 +76,13 @@
 
 ### **Equipe:**
 
-|Nome    | Papel   | Atividades Realizar/A realizar|
+|Nome    | Papel   | Atividades Realizadas/A realizar|
 |--------|---------|-----------------------|
-Gabriela |*Integrante*| *a definir*
-Giovanna | *Integrante*| *A definir*
-Isabela | ***Integrante&Parceiro***| *Parceiro de Negócio*
-Lucas Elias Gonçalves Peixoto Lelis de Oliveira| *Integrante* | *a definir*
-Maria Eduarda| *Integrante* | *A definir*
+Gabriela |*Desenvolvedora*| **
+Giovanna | *Scrum Master do Projeto/Desenvolvedora*| **
+Isabela | ***Integrante&Parceiro/Desenvolvedora***| *Parceiro de Negócio*
+Lucas Elias Gonçalves Peixoto Lelis de Oliveira| *Desenvolvedor* | **
+Maria Eduarda| *Desenvolvedora* | **
 
 ---
 

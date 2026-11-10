@@ -1,0 +1,68 @@
+CREATE DATABASE nos3D;
+USE nos3D;
+
+CREATE DATABASE IF NOT EXISTS meu_banco
+    CHARACTER SET utf8mb4
+    COLLATE utf8mb4_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS Material (
+    Cod_Material                 INTEGER NOT NULL,
+    Materia_prima                VARCHAR(50),
+    Peso                         FLOAT,
+    Cor                          VARCHAR(50),
+    Marca                        VARCHAR(50),
+    Quantidade_Disponivel        INTEGER,
+    fk_Fornecedor_Cod_Fornecedor INTEGER,
+    fk_Produtos_Cod_Produto      INTEGER,
+    fk_Marca_cod_marca           INTEGER,
+
+    PRIMARY KEY (Cod_Material)
+);
+
+CREATE TABLE IF NOT EXISTS Cliente (
+    Cod_Cliente              INTEGER NOT NULL,
+    Data_Cadastro            DATE,
+    Nome                     VARCHAR(50),
+    telefone                 CHAR(9),
+    email                    VARCHAR(50),
+    fk_Endereco_cod_endereco INTEGER,
+
+    PRIMARY KEY (Cod_Cliente)
+);
+
+
+CREATE TABLE IF NOT EXISTS fornecedor (
+    cod_fornecedor INT AUTO_INCREMENT,
+    cnpj CHAR(14) NOT NULL,
+    nome VARCHAR(50) NOT NULL,
+
+    CONSTRAINT pk_fornecedor PRIMARY KEY (cod_fornecedor),
+    CONSTRAINT uq_fornecedor_cnpj UNIQUE (cnpj)
+);
+
+CREATE TABLE IF NOT EXISTS marca (
+    cod_marca INT AUTO_INCREMENT,
+    nome VARCHAR(50) NOT NULL,
+    esta_ativo BOOLEAN NOT NULL DEFAULT TRUE,
+
+    CONSTRAINT pk_marca PRIMARY KEY (cod_marca),
+    CONSTRAINT uq_marca_nome UNIQUE (nome)
+);
+
+CREATE TABLE IF NOT EXISTS endereco (
+    cod_endereco INT AUTO_INCREMENT,
+    bairro VARCHAR(50) NOT NULL,
+    numero VARCHAR(10) NOT NULL,
+    estado CHAR(2) NOT NULL,
+    cidade VARCHAR(50) NOT NULL,
+    logradouro VARCHAR(100) NOT NULL,
+    cep CHAR(8) NOT NULL,
+    tipo_endereco VARCHAR(20),
+    fk_fornecedor_cod_fornecedor INT,
+
+    CONSTRAINT pk_endereco PRIMARY KEY (cod_endereco),
+    CONSTRAINT ck_endereco_estado CHECK (CHAR_LENGTH(estado) = 2),
+    CONSTRAINT fk_endereco_fornecedor
+        FOREIGN KEY (fk_fornecedor_cod_fornecedor)
+        REFERENCES fornecedor (cod_fornecedor)
+);

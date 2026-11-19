@@ -1,0 +1,3 @@
+import { ArrowUpRight } from "lucide-react";
+import { WhatsAppButton } from "@/components/whatsapp-button";
+export function CtaBand() { return <section className="cta-band"><div className="site-container cta-inner"><div><h2>Vamos transformar sua ideia em realidade?</h2><p>Conte com a Nós 3D para criar algo que é só seu.</p></div><WhatsAppButton variant="cta" className="h-12 px-6">Vamos conversar <ArrowUpRight /></WhatsAppButton></div></section>; }

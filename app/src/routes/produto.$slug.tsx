@@ -1,0 +1,14 @@
+import { createFileRoute, Link, notFound } from "@tanstack/react-router";
+import { useState } from "react";
+import { ArrowLeft, Check, MessageCircle } from "lucide-react";
+import { catalogService } from "@/services/catalog";
+import { pageHead, productMessage } from "@/lib/site-config";
+import { WhatsAppButton } from "@/components/whatsapp-button";
+import { Button } from "@/components/ui/button";
+export const Route=createFileRoute("/produto/$slug")({loader:({params}) => {const product=catalogService.get(params.slug); if (!product) throw notFound(); return product;},head:({loaderData}) => pageHead(loaderData?.name || "Produto não encontrado",loaderData?.description || "Explore o catálogo demonstrativo de impressão 3D da Nós 3D."),component:ProductDetail,notFoundComponent:() => <section className="section site-container"><h1 className="page-title">Produto não encontrado.</h1><Button asChild variant="outline" className="mt-6"><Link to="/catalogo">Voltar ao catálogo</Link></Button></section>});
+function ProductDetail() {
+  const product=Route.useLoaderData();
+  const [quantity,setQuantity]=useState("1");
+  const number=Number(quantity); const valid=Number.isInteger(number) && number>=1;
+  return <section className="section"><div className="site-container"><Button asChild variant="link" className="mb-7 p-0 text-xs"><Link to="/catalogo"><ArrowLeft />Voltar ao catálogo</Link></Button><div className="detail-layout"><div className="relative"><img src={product.image} alt={`${product.name} — produto demonstrativo`} className="detail-image" /><span className="demo-badge">Produto demonstrativo</span></div><div className="detail-copy"><p className="product-category">{product.category}</p><h1 className="page-title mb-5">{product.name}</h1><p>{product.description} Produzido por impressão 3D FDM, com opções de personalização avaliadas de acordo com o seu projeto.</p><h2 className="mt-7 mb-4 text-sm font-bold text-primary">Possibilidades de personalização</h2><ul className="space-y-3">{product.customization.map(c => <li key={c} className="flex gap-3 text-xs text-muted-foreground"><Check className="size-4 shrink-0 text-action" />{c}</li>)}</ul><div className="form-field mt-8 max-w-40"><label htmlFor="quantity">Quantidade desejada</label><input type="number" id="quantity" min="1" step="1" value={quantity} onChange={e => setQuantity(e.target.value)} aria-invalid={!valid} />{!valid && <span className="field-error" role="alert">Informe uma quantidade inteira de pelo menos 1.</span>}</div><WhatsAppButton variant="cta" className="mt-6 h-12 w-full" message={productMessage(product.name,number)} disabled={!valid}><MessageCircle />Solicitar orçamento pelo WhatsApp</WhatsAppButton><p className="mt-5 border-t border-border pt-5 text-[11px] leading-6">Este é um exemplo demonstrativo, não uma oferta de venda. Imagem ilustrativa. Preço, cores, dimensões, viabilidade e prazo são definidos no orçamento.</p></div></div></div></section>;
+}
